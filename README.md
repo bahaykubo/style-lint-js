@@ -16,11 +16,11 @@ ESLint rules:
 To generate default config files in your project, run
 
 ```shell
-npx style-lint init
+npx style-lint-js init
 
 # OR for typescript projects
 
-npx style-lint init-ts
+npx style-lint-js init-ts
 ```
 
 Once installed, you can run `eslint` or `prettier` commands as normal ie `npx eslint file-to-lint.js` or add to your package.json script.
