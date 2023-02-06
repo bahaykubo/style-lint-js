@@ -1,0 +1,3 @@
+const styles = require('style-lint-js/style');
+
+module.exports = styles;

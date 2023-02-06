@@ -1,0 +1,23 @@
+{
+  "name": "style-lint-js",
+  "version": "1.0.0",
+  "main": "init.js",
+  "license": "MIT",
+  "bin": {
+    "style-lint": "init.js"
+  },
+  "files": [
+    "init.js",
+    "lint.js",
+    "lint-typescript.js",
+    "style.js",
+    "defaults/"
+  ],
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
+    "eslint": "^8.33.0",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.5"
+  }
+}
