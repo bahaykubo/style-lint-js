@@ -1,7 +1,7 @@
 {
   "name": "style-lint-js",
   "description": "Lint and style checker using ESLint and Prettier with default rules that can be extended.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "init.js",
   "license": "MIT",
   "repository": {
@@ -28,7 +28,6 @@
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
     "eslint": "^8.33.0",
-    "prettier": "^2.8.3",
-    "typescript": "^4.9.5"
+    "prettier": "^2.8.3"
   }
 }

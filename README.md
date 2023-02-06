@@ -25,6 +25,8 @@ npx style-lint-js init-ts
 
 Once installed, you can run `eslint` or `prettier` commands as normal ie `npx eslint file-to-lint.js` or add to your package.json script.
 
+>**Note:** When initialising for typescript projects, you will need to have typescript installed already in your project for the typescript eslint rules to work. 
+
 ## Additional Rules or Override
 
 Update the `rc` file to add or override default rules.
