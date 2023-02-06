@@ -1,8 +1,13 @@
 {
   "name": "style-lint-js",
-  "version": "1.0.0",
+  "description": "Lint and style checker using ESLint and Prettier with default rules that can be extended.",
+  "version": "1.0.1",
   "main": "init.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahaykubo/style-lint-js.git"
+  },
   "bin": {
     "style-lint": "init.js"
   },
