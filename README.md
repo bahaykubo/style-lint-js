@@ -34,7 +34,7 @@ Update the `rc` file to add or override default rules.
 ie
 
 ```javascript
-const rules = require('style-lint-js/lint');
+const rules = require('style-lint-js/.eslintrc');
 
 rules.rules = {
   ...rules.rules,
