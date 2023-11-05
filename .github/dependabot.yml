@@ -1,0 +1,11 @@
+version: 2
+
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: weekly
+      time: '05:30'
+      day: 'monday'
+      timezone: 'Pacific/Auckland'
+    open-pull-requests-limit: 5
