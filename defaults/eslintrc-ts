@@ -1,3 +1,3 @@
-const rules = require('style-lint-js/lint-typescript');
+const rules = require('style-lint-js/.eslintrc-ts');
 
 module.exports = rules;

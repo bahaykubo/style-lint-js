@@ -1,4 +1,4 @@
-let baseRules = require('./lint');
+let baseRules = require('./.eslintrc');
 
 baseRules.extends.push('plugin:@typescript-eslint/recommended');
 baseRules['parser'] = '@typescript-eslint/parser';

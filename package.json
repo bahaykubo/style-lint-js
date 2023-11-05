@@ -19,9 +19,9 @@
   },
   "files": [
     "init.js",
-    "lint.js",
-    "lint-typescript.js",
-    "style.js",
+    ".eslintrc.js",
+    ".eslintrc-ts.js",
+    ".prettierrc.js",
     "defaults/"
   ],
   "dependencies": {

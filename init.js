@@ -4,11 +4,11 @@ const fs = require('fs');
 const path = require('path');
 
 const initRequest = () => {
-  return process.argv[2] === 'init'
+  return process.argv[2] === 'init';
 };
 
 const initRequestForTypescript = () => {
-  return process.argv[2] === 'init-ts'
+  return process.argv[2] === 'init-ts';
 };
 
 const backupFileIfExist = async (filename) => {
@@ -25,7 +25,7 @@ const setConfigFile = async (defaultsPath, configDefaultFile, existingFileToBack
   process.stdout.write(`Config file '${existingFileToBackup}' created.\n`);
 };
 
-const addIgnoreFiles = async(defaultsPath) => {
+const addIgnoreFiles = async (defaultsPath) => {
   const esLintIgnore = '.eslintignore';
   const prettierIgnore = '.prettierignore';
 
