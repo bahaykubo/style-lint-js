@@ -1,15 +1,18 @@
-
-# Style Lint JS
+<h1>Style Lint JS</h1>
 
 Installs and configure default linter and style checker for javascript and/or typescript projects.
 
-Using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) with default rules and as seen here:
+- [Install](#install)
+- [Additional Rules or Override](#additional-rules-or-override)
 
-ESLint rules:
+Using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) with default rules:
+
+- ESLint rules:
   - [For javascript](./lint.js)
   - [For Typescript](./lint-typescript.js)
+- [Prettier rules](./lint.js)
 
-[Prettier rules](./lint.js)
+
 
 ## Install
 

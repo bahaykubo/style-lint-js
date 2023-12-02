@@ -1,8 +1,15 @@
-# Test package locally
+<h1>Test Package Locally</h1>
 
 Two ways to try this linter package locally.
 
 Preferred creating package locally to install in another project instead of a symlink
+
+- [Create package locally](#create-package-locally)
+  - [Check content of local package](#check-content-of-local-package)
+- [Link package](#link-package)
+  - [Unlink package](#unlink-package)
+
+
 
 ## Create package locally
 
