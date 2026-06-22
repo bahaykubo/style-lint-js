@@ -8,9 +8,9 @@ Installs and configure default linter and style checker for javascript and/or ty
 Using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) with default rules:
 
 - ESLint rules:
-  - [For javascript](./lint.js)
-  - [For Typescript](./lint-typescript.js)
-- [Prettier rules](./lint.js)
+  - [For javascript](./eslint.config.js)
+  - [For Typescript](./eslint.config-ts.js)
+- [Prettier rules](./.prettierrc.js)
 
 
 
@@ -26,25 +26,54 @@ npx style-lint-js init
 npx style-lint-js init-ts
 ```
 
-Once installed, you can run `eslint` or `prettier` commands as normal ie `npx eslint file-to-lint.js` or add to your package.json script.
+This creates an `eslint.config.js` and `.prettierrc.js` in your project. Once installed, you can run `eslint` or `prettier` commands as normal ie `npx eslint file-to-lint.js` or add to your package.json script.
 
->**Note:** When initialising for typescript projects, you will need to have typescript installed already in your project for the typescript eslint rules to work. 
+>**Note:** When initialising for typescript projects, you will need to have typescript installed already in your project for the typescript eslint rules to work.
 
 ## Additional Rules or Override
 
-Update the `rc` file to add or override default rules.
+Update `eslint.config.js` to add or override default rules by appending a new config object to the array.
 
 ie
 
 ```javascript
-const rules = require('style-lint-js/.eslintrc');
+const config = require('style-lint-js/eslint.config.js');
 
-rules.rules = {
-  ...rules.rules,
-  ...{
-    'import/newline-after-import': 'error',
-  }
-}
+module.exports = [
+  ...config,
+  {
+    rules: {
+      'import/newline-after-import': 'error',
+    },
+  },
+];
+```
 
-module.exports = rules;
+For typescript projects:
+
+```javascript
+const config = require('style-lint-js/eslint.config-ts.js');
+
+module.exports = [
+  ...config,
+  {
+    files: ['**/*.ts'],
+    rules: {
+      '@typescript-eslint/explicit-function-return-type': 'error',
+    },
+  },
+];
+```
+
+To ignore additional paths, add an `ignores` config object:
+
+```javascript
+const config = require('style-lint-js/eslint.config.js');
+
+module.exports = [
+  ...config,
+  {
+    ignores: ['generated/**', 'vendor/**'],
+  },
+];
 ```
