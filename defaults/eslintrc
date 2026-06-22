@@ -1,3 +1,1 @@
-const rules = require('style-lint-js/.eslintrc');
-
-module.exports = rules;
+module.exports = require('style-lint-js/eslint.config.js');

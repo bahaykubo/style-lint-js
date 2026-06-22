@@ -26,14 +26,8 @@ const setConfigFile = async (defaultsPath, configDefaultFile, existingFileToBack
 };
 
 const addIgnoreFiles = async (defaultsPath) => {
-  const esLintIgnore = '.eslintignore';
   const prettierIgnore = '.prettierignore';
 
-  if (!fs.existsSync(esLintIgnore)) {
-    process.stdout.write('Creating eslint ignore file...');
-    await fs.promises.copyFile(path.join(defaultsPath, esLintIgnore), path.join('./', esLintIgnore));
-    process.stdout.write('Done\n');
-  }
   if (!fs.existsSync(prettierIgnore)) {
     process.stdout.write('Creating prettier ignore file...');
     await fs.promises.copyFile(path.join(defaultsPath, prettierIgnore), path.join('./', prettierIgnore));
@@ -50,7 +44,7 @@ const init = async () => {
   const defaultsPath = path.join(__dirname, 'defaults');
   const defaultESLintFile = initRequestForTypescript() ? 'eslintrc-ts' : 'eslintrc';
 
-  await setConfigFile(defaultsPath, defaultESLintFile, '.eslintrc.js');
+  await setConfigFile(defaultsPath, defaultESLintFile, 'eslint.config.js');
   await setConfigFile(defaultsPath, 'prettierrc', '.prettierrc.js');
   await addIgnoreFiles(defaultsPath);
 };

@@ -19,17 +19,19 @@
   },
   "files": [
     "init.js",
-    ".eslintrc.js",
-    ".eslintrc-ts.js",
+    "eslint.config.js",
+    "eslint.config-ts.js",
     ".prettierrc.js",
     "defaults/"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.9.1",
-    "@typescript-eslint/parser": "^6.9.1",
-    "eslint": "^8.53.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.61.1",
+    "@typescript-eslint/parser": "^8.61.1",
+    "eslint": "^10.5.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "globals": "^17.6.0",
     "prettier": "^3.0.3"
   },
   "scripts": {
