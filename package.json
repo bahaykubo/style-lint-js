@@ -2,6 +2,7 @@
   "name": "style-lint-js",
   "description": "Lint and style checker using ESLint and Prettier with default rules that can be extended.",
   "version": "2.0.0",
+  "type": "module",
   "main": "init.js",
   "license": "MIT",
   "repository": {
