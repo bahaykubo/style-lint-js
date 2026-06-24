@@ -1,7 +1,7 @@
-const baseConfig = require('./eslint.config.js');
-const typescriptPlugin = require('@typescript-eslint/eslint-plugin');
+import baseConfig from './eslint.config.js';
+import typescriptPlugin from '@typescript-eslint/eslint-plugin';
 
-module.exports = [
+export default [
   ...baseConfig,
   ...typescriptPlugin.configs['flat/recommended'],
   {

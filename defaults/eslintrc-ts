@@ -1,1 +1,3 @@
-module.exports = require('style-lint-js/eslint.config-ts.js');
+import config from 'style-lint-js/eslint.config-ts.js';
+
+export default config;
