@@ -13,16 +13,12 @@ Preferred creating package locally to install in another project instead of a sy
 
 ## Create package locally
 
-Create a package locally using [yarn pack](https://classic.yarnpkg.com/en/docs/cli/pack). This will create a `*.tgz` file of the package that can be installed in another project.
+Create a package locally using [npm pack](https://docs.npmjs.com/cli/commands/npm-pack). This will create a `*.tgz` file of the package that can be installed in another project.
 
-From another project, install this package using `yarn add` or `npm install`.
+From another project, install this package using `npm install`.
 
 ```bash
-# Using yarn
-yarn add ../../path/to/tgz/file.tgz
-
-# Using npm
-npm install ../../path/to/tgz/file/tgz
+npm install ../../path/to/tgz/file.tgz
 ```
 
 ### Check content of local package
@@ -33,14 +29,14 @@ tar -tvf style-lint-js-v1.tgz
 
 ## Link package
 
-Run [yarn link](https://classic.yarnpkg.com/lang/en/docs/cli/link/) from this directory
+Run [npm link](https://docs.npmjs.com/cli/commands/npm-link) from this directory
 
-And then run `yarn link style-lint-js` from another project using this package.
+And then run `npm link style-lint-js` from another project using this package.
 
 ### Unlink package
 
 Reverse the link procedure.
 
-Run `yarn unlink style-lint-js` from the project using this package.
+Run `npm unlink style-lint-js` from the project using this package.
 
-Run `yarn unlink` from this directory.
+Run `npm unlink` from this directory.

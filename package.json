@@ -1,7 +1,7 @@
 {
   "name": "style-lint-js",
   "description": "Lint and style checker using ESLint and Prettier with default rules that can be extended.",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "type": "module",
   "main": "init.js",
   "license": "MIT",
@@ -36,6 +36,6 @@
     "prettier": "^3.0.3"
   },
   "scripts": {
-    "ci": "rm -rf node_modules && yarn install --frozen-lockfile"
+    "ci": "rm -rf node_modules && npm ci"
   }
 }
