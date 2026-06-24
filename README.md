@@ -37,9 +37,9 @@ Update `eslint.config.js` to add or override default rules by appending a new co
 ie
 
 ```javascript
-const config = require('style-lint-js/eslint.config.js');
+import config from 'style-lint-js/eslint.config.js';
 
-module.exports = [
+export default [
   ...config,
   {
     rules: {
@@ -52,9 +52,9 @@ module.exports = [
 For typescript projects:
 
 ```javascript
-const config = require('style-lint-js/eslint.config-ts.js');
+import config from 'style-lint-js/eslint.config-ts.js';
 
-module.exports = [
+export default [
   ...config,
   {
     files: ['**/*.ts'],
@@ -68,9 +68,9 @@ module.exports = [
 To ignore additional paths, add an `ignores` config object:
 
 ```javascript
-const config = require('style-lint-js/eslint.config.js');
+import config from 'style-lint-js/eslint.config.js';
 
-module.exports = [
+export default [
   ...config,
   {
     ignores: ['generated/**', 'vendor/**'],
